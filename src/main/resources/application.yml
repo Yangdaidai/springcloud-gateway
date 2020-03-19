@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springcloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: young_route
+          uri: http://www.weather.com.cn/
+          predicates:
+            - Path=/radar
+            - Cookie=young, value
+

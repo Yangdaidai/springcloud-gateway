@@ -4,3 +4,5 @@ out/
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
+*rebel.xml
+springcloud-gateway.iml
